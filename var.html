@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		body{
+			color:blue;
+			background-color: lightblue;
+		}
+		#first{
+			border-radius: 10px;
+			border-style: dotted;
+			border-color: blue;
+			margin-left: 20px;
+		}
+		#second{
+
+				border-radius: 10px;
+				border-style: dotted;
+				border-color: blue;
+				margin-left: 8px;
+
+		}
+		#answer{
+			border-radius: 10px;
+			border-style: double;
+			border-color: red;
+			margin-left: 180px;
+		}
+	    
+	</style>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a - b;
+document.getElementById("answer").value= c;
+}
+</script>
+</head>
+
+
+<body>
+Enter the First number : <input id="first" type="number"><br>
+Enter the Second number: <input id="second" type="number"><br>
+<button onclick="add()">subs</button><br>
+<input id="answer"><br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
